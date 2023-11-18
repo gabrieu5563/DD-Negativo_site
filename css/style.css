@@ -49,6 +49,7 @@ html, body{
     height: 50px;
     width: auto;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .capa.content{
@@ -139,9 +140,15 @@ html, body{
     width: 29vw;
 }
 
+.linha{
+    border-top: 2px solid #555;
+    margin: 20px;
+}
+
 .contato{
     display: flex;
     margin: 30px;
+    justify-content: space-between;
 }
 
 .tipo_contato{
@@ -149,6 +156,7 @@ html, body{
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+    width: 30vw;
 }
 
 .tipo_contato h1{
@@ -168,6 +176,7 @@ html, body{
 .contato_content button, .contato_content input {
     border: none;
     outline: none;
+    background-color: #fff;
 }
 
 .contato_content input{
@@ -176,4 +185,81 @@ html, body{
 
 .contato_content h3{
     font-size: 25px;
+}
+
+.contato_content_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mail1{
+    font-size: 23px;
+    width: 400px;
+}
+
+
+
+.titulo_option{
+    display: flex;
+    justify-content:  center;
+    margin-bottom: 50px;
+}
+
+.option{
+    display: flex;
+    justify-content: space-around;
+}
+
+.option button{
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.option2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #555;
+    border-radius: 15px;
+    padding: 10px;
+    width: 25vw;
+}
+
+.option2:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+.option2 img{
+    height: 200px;
+    width: auto;
+    cursor: pointer;
+}
+
+.option2.clicked{
+	transform: scale(1.03);
+    border: 5px solid #369AFF;
+}
+
+.botao_continuar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3.25vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.botao_continuar button{
+    font-size: 25px;
+    background-color: #b00000;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.botao_continuar button:hover{
+    cursor: pointer;
+    transform: scale(0.97);
 }
