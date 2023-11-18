@@ -12,6 +12,7 @@ html, body{
     background-color: #b00000;
     position: sticky;
     top: 0px;
+    z-index: 2;
 }
 
 .header_content{
@@ -240,6 +241,7 @@ html, body{
 .option2.clicked{
 	transform: scale(1.03);
     border: 5px solid #369AFF;
+    z-index: 1;
 }
 
 .botao_continuar{
@@ -262,4 +264,45 @@ html, body{
 .botao_continuar button:hover{
     cursor: pointer;
     transform: scale(0.97);
+}
+
+
+
+.option_cell{
+    display: flex;
+    justify-content: space-around;
+}
+
+.option_cell button{
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.option2_cell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #555;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20vw;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.option2_cell img{
+    width: 200px;
+    height: auto;
+}
+
+.option2_cell:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+.option2_cell.clicked{
+    transform: scale(1.03);
+    border: 5px solid #369AFF;
+    z-index: 1;
 }

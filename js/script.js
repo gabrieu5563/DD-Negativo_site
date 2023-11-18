@@ -37,14 +37,26 @@ function redirect() {
     window.location.href = "orcamento.html";
 }
 
-let botao_clicado = 0;
+let tipo_orcamento = 0;
 
-function selection(buttonId, valor) {
+function tipo(buttonId, valor) {
     document.querySelectorAll('.option2').forEach(button => {
     button.classList.remove('clicked');
     });
     document.getElementById(buttonId).classList.add('clicked');
 
-    botao_clicado = valor;
-    console.log(botao_clicado);
+    tipo_orcamento = valor;
+    console.log('tipo = ' + tipo_orcamento);
+}
+
+let marca_orcamento = 0;
+
+function marca(buttonId, valor) {
+    document.querySelectorAll('.option2_cell').forEach(button => {
+    button.classList.remove('clicked');
+    });
+    document.getElementById(buttonId).classList.add('clicked');
+
+    marca_orcamento = valor;
+    console.log('marca = ' + marca_orcamento);
 }
