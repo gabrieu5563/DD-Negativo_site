@@ -90,3 +90,7 @@ function reparo(buttonId, valor) {
     tipo_reparo = valor;
     console.log('tipo de reparo = ' + tipo_reparo);
 }
+
+function continuar_final(){
+    window.location.href="orcamento_final.html"    
+}

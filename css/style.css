@@ -372,3 +372,103 @@ html, body{
     border: 5px solid #369AFF;
     z-index: 1;
 }
+
+
+
+.info_orcamento{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.content_orcamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_orcamento h3{
+    font-size: 20px;
+}
+
+.content_orcamento_title{
+    display: flex;
+    align-items: center;
+}
+
+.content_orcamento_title h1{
+    font-size: 40px;
+}
+
+.content_orcamento_title img{
+    height: 30px;
+    width: auto;
+    padding-right: 10px;
+}
+
+#title_orcamento{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.mapa_orcamento{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info_agendamento{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.info_agendamento h3{
+    font-size: 30px;
+}
+
+.agendamento_data{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    width: 25vw;
+}
+
+.agendamento_data select{
+    height: 30px;
+    width: 200px;
+    border-radius: 13px;
+    outline: 2px solid #999;
+    border: none;
+    font-size: 20px;
+}
+
+.agendamento_data input{
+    height: 30px;
+    width: 200px;
+    border-radius: 13px;
+    outline: 2px solid #999;
+    border: none;
+    font-size: 20px;
+}
+
+.agendamento_hora{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    width: 25vw;
+}
+
+.agendamento_hora fieldset{
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.agendamento_hora label{
+    display: block;
+}
