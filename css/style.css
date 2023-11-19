@@ -244,9 +244,31 @@ html, body{
     z-index: 1;
 }
 
-.botao_continuar{
+
+.botao_continuar1{
     display: flex;
     justify-content: flex-end;
+    margin-right: 3.25vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.botao_continuar1 button{
+    font-size: 25px;
+    background-color: #b00000;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.botao_continuar1 button:hover{
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+
+.botao_continuar{
     margin-right: 3.25vw;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -264,6 +286,31 @@ html, body{
 .botao_continuar button:hover{
     cursor: pointer;
     transform: scale(0.97);
+}
+
+.botao_voltar{
+    margin-left: 3.25vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.botao_voltar button{
+    font-size: 25px;
+    background-color: #999;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.botao_voltar button:hover{
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.botoes_fim{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -294,6 +341,25 @@ html, body{
 .option2_cell img{
     width: 200px;
     height: auto;
+    cursor: pointer;
+}
+
+.option2_reparo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #555;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20vw;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.option2_reparo img{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
 }
 
 .option2_cell:hover{
@@ -301,7 +367,7 @@ html, body{
     cursor: pointer;
 }
 
-.option2_cell.clicked{
+.option2_reparo.clicked, .option2_cell.clicked{
     transform: scale(1.03);
     border: 5px solid #369AFF;
     z-index: 1;
