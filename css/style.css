@@ -311,6 +311,7 @@ html, body{
 .botoes_fim{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -471,4 +472,25 @@ html, body{
 
 .agendamento_hora label{
     display: block;
+}
+
+.botao_continuar_final button{
+    font-size: 25px;
+    background-color: #b00000;
+    border-radius: 10px;
+    height: 50px;
+    width: 230px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+    margin-right: 20px;
+}
+
+.botao_continuar_final button:hover{
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.title_outro{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
