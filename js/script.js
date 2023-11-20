@@ -375,3 +375,8 @@ function exibir_valor(){
 
     document.getElementById("valor_reparo").appendChild(item_valor)
 }
+
+function agendar(){
+    alert("Conserto agendado")
+    window.location.href = "index.html"
+}
