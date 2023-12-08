@@ -89,6 +89,57 @@ html, body{
     height: 40px;
 }
 
+.nova_avaliacao{
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+.nova_avaliacao button{
+    height: 60px;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.nova_avaliacao button:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+    background-color: #999;
+}
+
+.info_avaliacao{
+    margin-left: 15px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    background-color: #999;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.info_avaliacao h2{
+    font-size: 25px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.info_avaliacao h3{
+    font-size: 15px;
+}
+
+.info_avaliacao form{
+    margin-left: 10px;
+}
+
+.info_avaliacao input{
+    border-radius: 5px;
+    width: 80%;
+}
+
+.info_avaliacao textarea{
+    border-radius: 5px;
+    width: 80%;
+}
+
 .footer{
     background-color: #b00000;
     color: #fff;

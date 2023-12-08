@@ -1,3 +1,46 @@
+function abrirFormulario() {
+    document.getElementById("formularioAvaliacao").style.display = "block";
+    document.getElementById("novaAvaliacao").style.display = "none";
+}
+
+function adicionarAvaliacao() {
+    const nome = document.getElementById("nome").value;
+    const estrelas = document.getElementById("estrelas").value;
+    const comentario = document.getElementById("comentario").value;
+
+    const novaAvaliacao = document.createElement("div");
+    novaAvaliacao.className = "card_avaliacao";
+
+    const titulo = document.createElement("div");
+    titulo.className = "avaliacao_titulo";
+    titulo.innerHTML = "<h3>" + nome + "</h3><img src='img/user.png'>";
+
+    const estrelasImg = document.createElement("img");
+    estrelasImg.src = "img/" + estrelas + "_estrela.png";
+
+    const comentarioElement = document.createElement("h4");
+    comentarioElement.innerHTML = comentario;
+
+    novaAvaliacao.appendChild(titulo);
+    novaAvaliacao.appendChild(document.createElement("br"));
+    novaAvaliacao.appendChild(estrelasImg);
+    novaAvaliacao.appendChild(document.createElement("br"));
+    novaAvaliacao.appendChild(document.createElement("br"));
+    novaAvaliacao.appendChild(comentarioElement);
+
+    const avaliacoesContainer = document.querySelector(".avaliacoes");
+    avaliacoesContainer.appendChild(novaAvaliacao);
+
+    document.getElementById("formularioAvaliacao").style.display = "none";
+    document.getElementById("novaAvaliacao").style.display = "block";
+
+    document.getElementById("nome").value = "";
+    document.getElementById("estrelas").value = "";
+    document.getElementById("comentario").value = "";
+}
+
+
+
 function copiar_tel1(){
     let tel = document.getElementById("tel1").value
     navigator.clipboard.writeText(tel)
