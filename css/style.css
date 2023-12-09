@@ -37,7 +37,7 @@ html, body{
 
 .capa{
     display: flex;
-    background-image: url(/img/tecnico.jpg);
+    background-image: url("../img/tecnico.jpg");
         background-size: cover;
     padding-bottom: 25%;
     font-size: 30px;
